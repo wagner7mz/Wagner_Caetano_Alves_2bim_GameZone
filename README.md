@@ -1,10 +1,12 @@
- GameZone
+# GameZone
 
 Projeto desenvolvido para a disciplina de Desenvolvimento Web I (DW1).
 
+## Descrição
 
 O GameZone é uma aplicação web desenvolvida utilizando a arquitetura Cliente/Servidor. O sistema permite consultar categorias de jogos e jogos cadastrados em um banco de dados PostgreSQL através de uma API desenvolvida em Node.js.
 
+## Tecnologias Utilizadas
 
 - HTML5
 - CSS3
@@ -13,11 +15,12 @@ O GameZone é uma aplicação web desenvolvida utilizando a arquitetura Cliente/
 - Express
 - PostgreSQL
 
-Estrutura do Projeto
+## Estrutura do Projeto
+
 ```
 DW1_GameZone
 │
-├── client
+├── cliente
 │   ├── imagens
 │   ├── index.html
 │   ├── script.js
@@ -34,44 +37,36 @@ DW1_GameZone
 └── README.md
 ```
 
+## Como executar
 
+1. Crie um banco chamado `gamezone`.
 
-Crie um banco chamado:
-
-```
-gamezone
-```
-
-Depois execute o arquivo:
+2. Execute o arquivo:
 
 ```
-servidor/sql/banco.sql
+sql/banco.sql
 ```
 
-
-
-Abra o terminal na pasta servidor:
+3. Na pasta `servidor`, execute:
 
 ```
 npm install
 ```
 
-
+4. Depois:
 
 ```
 node server.js
 ```
 
-Abra o arquivo `index.html` utilizando o Live Server.
+5. Abra o `index.html` com o Live Server.
 
+## Rotas
 
+- GET /categorias
+- GET /jogos
+- GET /jogosCategoria/:id
 
-GET /categorias
+## Autor
 
-GET /jogos
-
-GET /jogosCategoria/:id
-
-
-
-Wagner caetano Alves
+**Wagner Caetano Alves**
